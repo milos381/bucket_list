@@ -1,0 +1,14 @@
+<p> Welcome, <%= current_user.username %>
+<h2> Buket List: </h2>
+
+<% @items.each do |item| %>
+    <div>
+    
+        <a href="/items/<%=item.id%>/edit"><%= item.content %></a><br>
+  
+    </div>
+<% end %><br>
+
+<a href = '/items/new'>New Item</a><br>
+
+<a href = '/'>Home</a>
