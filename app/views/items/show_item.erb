@@ -1,0 +1,9 @@
+<p><%= @item.content %></p>
+
+<form method="post" action="/items/<%=@item.id%>/delete">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Item">
+</form>
+
+<a href="/items/<%=@item.id%>/edit">Edit Item </a><br>
+<a href="/items">Back To Bucket List </a>
