@@ -1,4 +1,9 @@
-<p><%= @item.content %></p>
+
+
+<div class="container">
+  
+  <div class="col-md-8 col-md-offset-2">
+    <p><%= @item.content %></p>
 
 <form method="post" action="/items/<%=@item.id%>/delete">
   <input id="hidden" type="hidden" name="_method" value="DELETE">
@@ -7,3 +12,5 @@
 
 <a href="/items/<%=@item.id%>/edit">Edit Item </a><br>
 <a href="/items">Back To Bucket List </a>
+  </div>
+</div>

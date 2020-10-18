@@ -5,10 +5,11 @@
 
     <div class="content">
       <% if logged_in? %>
-
-        <a href="/tweets/new"> Create Tweet </a>
-        <a href="/logout"> Log Out </a>
         <p>Welcome, <%=current_user.username %></p>
+        <a href="/items/new"> Make New Bucket List Item </a><br><br>
+        <a href="/logout"> Log Out </a><br><br>
+        <a href="/items"> My Bucket List </a><br><br>
+        
 
       <% else %>
         <a href="/signup">Sign Up</a>
@@ -18,3 +19,4 @@
 
   </div>
 </div>
+
